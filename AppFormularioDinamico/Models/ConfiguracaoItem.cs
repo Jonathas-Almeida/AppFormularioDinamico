@@ -3,33 +3,33 @@ using System.Text.Json.Serialization;
 
 namespace AppFormularioDinamico.Models
 {
-    public class ItemConfig
+    public class ConfiguracaoItem
     {
         [JsonPropertyName("id")]
         public int Id { get; set; }
 
         [JsonPropertyName("type")]
-        public string Type { get; set; }
+        public string Tipo { get; set; }
 
         [JsonPropertyName("text")]
-        public string Text { get; set; }
+        public string Texto { get; set; }
 
         [JsonPropertyName("ismandatory")]
-        public bool? IsMandatory { get; set; }
+        public bool? EhObrigatorio { get; set; }
 
         [JsonPropertyName("initialvalue")]
-        public string InitialValue { get; set; }
+        public string ValorInicial { get; set; }
 
         [JsonPropertyName("opcoes")]
         public List<string> Opcoes { get; set; }
 
         [JsonPropertyName("items")]
-        public List<ItemConfig> Items { get; set; }
+        public List<ConfiguracaoItem> Itens { get; set; }
 
         [JsonPropertyName("itemnamemask")]
-        public string ItemNameMask { get; set; }
+        public string MascaraNomeItem { get; set; }
 
         [JsonPropertyName("addclonebutton")]
-        public string AddCloneButton { get; set; }
+        public string AdicionarBotaoClone { get; set; }
     }
 }

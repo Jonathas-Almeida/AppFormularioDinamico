@@ -3,9 +3,9 @@ using System.Text.Json.Serialization;
 
 namespace AppFormularioDinamico.Models
 {
-    public class RootConfig
+    public class ConfiguracaoRaiz
     {
         [JsonPropertyName("items")]
-        public List<ItemConfig> Items { get; set; }
+        public List<ConfiguracaoItem> Itens { get; set; }
     }
 }

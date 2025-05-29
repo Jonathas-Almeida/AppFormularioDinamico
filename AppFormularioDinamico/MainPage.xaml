@@ -12,7 +12,7 @@
             Spacing="10">
 
             <Button Text="Enviar Formulário"
-                    Clicked="OnSubmitButtonClicked"
+                    Clicked="AoClicarNoBotaoEnviar"
                     Margin="0,20,0,0"
                     BackgroundColor="Green"
                     TextColor="White"
