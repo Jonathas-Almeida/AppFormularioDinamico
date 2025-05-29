@@ -1,0 +1,301 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "type": "tabpage",
+      "text": "Cadastro",
+      "items": [
+        {
+          "id": 100,
+          "type": "dropdown",
+          "text": "Município",
+          "ismandatory": true,
+          "opcoes": [
+            "São Paulo",
+            "Rio de Janeiro",
+            "Belo Horizonte",
+            "Salvador",
+            "Brasília"
+          ]
+        },
+        {
+          "id": 110,
+          "type": "dropdown",
+          "text": "Prancha",
+          "ismandatory": false,
+          "opcoes": [
+            "Prancha A",
+            "Prancha B",
+            "Prancha C",
+            "Prancha D"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "tabpage",
+      "text": "Trafo",
+      "items": [
+        {
+          "id": 200,
+          "type": "checkbox",
+          "text": "Este ponto tem um trafo",
+          "initialvalue": "false"
+        },
+        {
+          "id": 270,
+          "type": "textbox",
+          "text": "No. Chave",
+          "ismandatory": true
+        },
+        {
+          "id": 60,
+          "type": "dropdown",
+          "text": "Potência",
+          "ismandatory": false,
+          "opcoes": [
+            "15 kVA",
+            "30 kVA",
+            "45 kVA",
+            "75 kVA",
+            "112,5 kVA",
+            "150 kVA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "tabpage",
+      "text": "Ponto",
+      "items": [
+        {
+          "id": 395,
+          "type": "textbox",
+          "text": "Núm. Ponto",
+          "ismandatory": false
+        },
+        {
+          "id": 350,
+          "type": "dropdown",
+          "text": "Tipo Poste",
+          "ismandatory": false,
+          "opcoes": [
+            "Concreto",
+            "Madeira",
+            "Metálico",
+            "Fibra"
+          ]
+        },
+        {
+          "id": 40,
+          "type": "dropdown",
+          "text": "Altura/Esforço",
+          "ismandatory": false,
+          "opcoes": [
+            "9m/150daN",
+            "10m/150daN",
+            "11m/300daN",
+            "12m/300daN",
+            "13m/600daN"
+          ]
+        },
+        {
+          "id": 460,
+          "type": "checkbox",
+          "text": "Sem acesso",
+          "initialvalue": "false"
+        },
+        {
+          "id": 10024,
+          "type": "multilinetextbox",
+          "text": "Observações",
+          "ismandatory": false
+        },
+        {
+          "id": 500,
+          "type": "photo",
+          "text": "Foto Panorâmica Poste",
+          "ismandatory": true
+        },
+        {
+          "id": 10010,
+          "type": "gps",
+          "text": "Coordenada",
+          "ismandatory": true
+        },
+        {
+          "id": 10000,
+          "type": "textbox",
+          "text": "País",
+          "initialvalue": "Brasil"
+        },
+        {
+          "id": 10001,
+          "type": "textbox",
+          "text": "Estado"
+        },
+        {
+          "id": 10002,
+          "type": "textbox",
+          "text": "Cidade"
+        },
+        {
+          "id": 10003,
+          "type": "textbox",
+          "text": "Bairro"
+        },
+        {
+          "id": 10004,
+          "type": "textbox",
+          "text": "Logradouro"
+        },
+        {
+          "id": 10005,
+          "type": "textbox",
+          "text": "Núm. Logradouro"
+        },
+        {
+          "id": 10006,
+          "type": "textbox",
+          "text": "CEP"
+        },
+        {
+          "id": 140,
+          "type": "textbox",
+          "text": "Precisão (m)",
+          "initialvalue": "5"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "tabpage",
+      "text": "IP",
+      "items": [
+        {
+          "id": 1430,
+          "type": "checkbox",
+          "text": "Circuito Exclusivo?",
+          "initialvalue": "false"
+        },
+        {
+          "id": 645,
+          "type": "itemscontainermaster",
+          "text": "Luminária(s)",
+          "itemnamemask": "[650] - [1904680] - [1904690] - [1904710]",
+          "addclonebutton": "true",
+          "items": [
+            {
+              "id": 854847,
+              "type": "dropdown",
+              "text": "Relé",
+              "ismandatory": true,
+              "opcoes": [
+                "Relé Fotoelétrico",
+                "Relé Astronômico",
+                "Comando Manual"
+              ]
+            },
+            {
+              "id": 620,
+              "type": "dropdown",
+              "text": "Braço",
+              "ismandatory": true,
+              "opcoes": [
+                "Braço Simples",
+                "Braço Duplo",
+                "Braço Decorativo",
+                "Sem Braço"
+              ]
+            },
+            {
+              "id": 630,
+              "type": "textbox",
+              "text": "Número Plaqueta IP"
+            },
+            {
+              "id": 650,
+              "type": "dropdown",
+              "text": "Tipo Luminária",
+              "opcoes": [
+                "LED Viária",
+                "LED Decorativa",
+                "Vapor de Sódio",
+                "Vapor Metálico",
+                "Fluorescente"
+              ]
+            },
+            {
+              "id": 675,
+              "type": "textbox",
+              "text": "Quantidade Luminárias",
+              "initialvalue": "1"
+            },
+            {
+              "id": 9001,
+              "type": "itemscontainermaster",
+              "text": "Lâmpada(s)",
+              "itemnamemask": "[1904680] [1904690] ([1904700])",
+              "addclonebutton": "true",
+              "items": [
+                {
+                  "id": 1904680,
+                  "type": "radiobuttonlist",
+                  "text": "Tipo",
+                  "ismandatory": true,
+                  "opcoes": [
+                    "LED",
+                    "Vapor de Sódio",
+                    "Vapor Metálico",
+                    "Fluorescente",
+                    "Incandescente"
+                  ]
+                },
+                {
+                  "id": 1904690,
+                  "type": "dropdown",
+                  "text": "Potência (W)",
+                  "ismandatory": true,
+                  "opcoes": [
+                    "50W",
+                    "70W",
+                    "100W",
+                    "150W",
+                    "250W",
+                    "400W"
+                  ]
+                },
+                {
+                  "id": 1904700,
+                  "type": "textbox",
+                  "text": "Quantidade",
+                  "initialvalue": "1",
+                  "ismandatory": true
+                },
+                {
+                  "id": 1904760,
+                  "type": "checkbox",
+                  "text": "Medido?",
+                  "initialvalue": "false"
+                },
+                {
+                  "id": 1904780,
+                  "type": "textbox",
+                  "text": "Número Medidor"
+                },
+                {
+                  "id": 1904710,
+                  "type": "checkbox",
+                  "text": "Lâmpada Acesa 24hrs?",
+                  "initialvalue": "false"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

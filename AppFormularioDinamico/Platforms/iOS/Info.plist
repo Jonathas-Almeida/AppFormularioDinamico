@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>NSCameraUsageDescription</key>
+		<string>Este aplicativo precisa de acesso à câmera para tirar fotos.</string>
+
+		<key>NSPhotoLibraryUsageDescription</key>
+		<string>Este aplicativo precisa de acesso à galeria de fotos para selecionar imagens.</string>
+
+		<key>NSLocationWhenInUseUsageDescription</key>
+		<string>Este aplicativo precisa de acesso à sua localização para obter coordenadas GPS (quando o app está em uso).</string>
+
+		<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+		<string>Este aplicativo precisa de acesso contínuo à sua localização para obter coordenadas GPS.</string>
+	</dict>
+</plist>
