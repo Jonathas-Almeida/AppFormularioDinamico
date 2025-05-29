@@ -14,6 +14,32 @@ Este é um aplicativo exemplo feito em .NET MAUI que gera formulários dinâmico
 - Suporte a campos de texto, dropdown, checkbox, foto e GPS
 - Validação de campos obrigatórios
 
+## Dependências
+
+Este projeto utiliza as seguintes bibliotecas:
+
+### .NET MAUI
+
+*   **Microsoft.Maui.Controls**: Contém os controles de interface do usuário (Labels, Buttons, Entries, Pickers, CheckBoxes, etc.) e layouts (VerticalStackLayout, etc.). Essencial para a criação da interface do aplicativo.
+*   **Microsoft.Maui.Controls.Shapes**: Fornece formas geométricas como RoundRectangle para estilizar elementos visuais.
+*   **Microsoft.Maui.Media**: Permite acessar recursos de mídia, como a câmera e a galeria de fotos, através da classe `MediaPicker`.
+*   **Microsoft.Maui.Devices.Sensors**: Oferece acesso a sensores do dispositivo, como o GPS, através das classes `Geolocation` e `GeolocationRequest`.
+*   **Microsoft.Maui**: Biblioteca base do .NET MAUI, que fornece funcionalidades essenciais para o aplicativo.
+
+### JSON
+
+*   **System.Text.Json**: Biblioteca padrão do .NET para trabalhar com JSON. Ela é usada para converter strings JSON em objetos C# e vice-versa.
+*   **System.Text.Json.Serialization**: Contém atributos e classes para personalizar a serialização e deserialização JSON.
+
+### Outras
+
+*   **System.Collections.Generic**: Fornece interfaces e classes para definir coleções genéricas, como `List<T>` e `Dictionary<TKey, TValue>`.
+*   **System.IO**: Permite realizar operações de entrada e saída, como ler arquivos (usado para ler o arquivo `config.json`).
+*   **System.Reflection**: Permite obter informações sobre tipos, métodos e campos em tempo de execução (usado para acessar recursos inseridos no assembly).
+*   **System.Linq**: Fornece métodos de extensão para trabalhar com coleções, como `Any()` e `Select()`.
+
+---
+
 ## Como rodar o projeto
 
 ### Pré-requisitos
@@ -43,7 +69,7 @@ Este é um aplicativo exemplo feito em .NET MAUI que gera formulários dinâmico
 
 4. **Execute o projeto:**
    - Pelo Visual Studio: abra o `.sln`, selecione a plataforma e clique em Executar.
-     
+
     - Pela linha de comando:
       - **No Windows:**
         ```bash
@@ -54,13 +80,9 @@ Este é um aplicativo exemplo feito em .NET MAUI que gera formulários dinâmico
         dotnet run -f net9.0-android
         ```
 
-
-        
-      
-
 ## Observação
 
-O formulário é configurado pelo arquivo `config.json` na pasta `Resources/Raw/`.  
+O formulário é configurado pelo arquivo `config.json` na pasta `Resources/Raw/`.
 Você pode editar esse arquivo para mudar os campos exibidos no app.
 
 ---
