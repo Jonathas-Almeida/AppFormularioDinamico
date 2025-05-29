@@ -1,5 +1,11 @@
 # App Formulário Dinâmico - .NET MAUI
 
+![Image](https://github.com/user-attachments/assets/36e729d7-b025-49d8-8627-ff0306841fef)
+
+![Image](https://github.com/user-attachments/assets/729fdae8-0410-48c1-a964-3d306a3de487)
+
+![Image](https://github.com/user-attachments/assets/5209bdda-74e1-4e7f-a87c-59aa71adb524)
+
 Este é um aplicativo exemplo feito em .NET MAUI que gera formulários dinâmicos a partir de um arquivo JSON de configuração. O objetivo é mostrar como criar telas flexíveis e interativas para coleta de dados em diferentes plataformas (Android, iOS e Windows).
 
 ## Funcionalidade
